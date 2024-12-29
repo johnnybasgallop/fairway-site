@@ -11,7 +11,7 @@ const Navbar = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav className="flex justify-between items-center p-6 md:px-[60px] w-full">
+    <nav className="flex justify-between items-center p-6 md:px-[60px] lg:px-[30px] xl:px-[60px] w-full">
       {/* Logo Section */}
       <div className="lg:hidden">
         <Logo />
