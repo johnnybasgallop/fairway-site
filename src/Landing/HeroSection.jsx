@@ -2,14 +2,16 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="flex items-center justify-between px-[80px] py-12 lg:py-[100px] xl:py-[150px]">
+    <section className="flex items-center justify-between px-[40px] md:px-[80px] py-12 lg:py-[80px] xl:py-[120px] 2xl:py-[150px]">
       {/* Left Content */}
-      <div className="lg:w-[50%] space-y-6 flex flex-col items-start justify-start text-left">
+      <div className="xl:w-[50%] w-full md:w-[80%] space-y-6 flex flex-col items-start justify-start text-left">
         {/* Heading */}
-        <h1 className="text-4xl lg:text-6xl 2xl:text-[70px] font-extrabold leading-relaxed">
+        <h1 className="text-5xl md:text-6xl 2xl:text-[70px] font-extrabold leading-snug xl:leading-relaxed">
           Building Wealth with{" "}
-          <span className="text-green-600 leading-relaxed">Precision</span> and{" "}
-          <span className="text-green-600">Purpose</span>
+          <span className="text-green-600 xl:leading-relaxed leading-snug">
+            Precision
+          </span>{" "}
+          and <span className="text-green-600">Purpose</span>
         </h1>
 
         {/* Subtext */}
@@ -30,11 +32,11 @@ const HeroSection = () => {
       </div>
 
       {/* Right Logo */}
-      <div className="hidden lg:flex flex-col justify-center items-center w-[35%]">
+      <div className="hidden xl:flex flex-col justify-center items-center w-[30%] xl:w-[35%]">
         <img
           src="/fairway-logo.png" // Replace with the path to your logo
           alt="Fairway Logo"
-          className="w-[340px] 2xl:w-[400px] h-auto"
+          className="lg:w-[250px] xl:w-[340px] 2xl:w-[400px] h-auto"
         />
       </div>
     </section>
