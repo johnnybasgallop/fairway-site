@@ -5,7 +5,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
   const links = [
     { href: "#what-we-do", label: "What we do" },
     { href: "#what-we-offer", label: "What we offer" },
-    { href: "#our-goals", label: "Our goals" },
+    { href: "#get-started", label: "Get started" },
     { href: "#why-us", label: "Why us?" },
     { href: "#our-team", label: "Our team" },
   ];
@@ -18,7 +18,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
           : "hidden lg:flex flex flex-row w-full items-center justify-between"
       }`}
     >
-      <div className=" hidden lg:flex flex-row items-center lg:space-x-8 xl:space-x-16">
+      <div className=" hidden lg:flex flex-row items-center lg:space-x-6 xl:space-x-12 2xl:space-x-16">
         <Logo />
         {links.map(({ href, label }) => (
           <a
