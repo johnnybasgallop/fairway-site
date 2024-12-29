@@ -14,7 +14,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
       className={`${
         isMobile
           ? "flex flex-col items-center w-full space-y-10"
-          : "hidden lg:flex space-x-8 xl:space-x-16"
+          : "hidden lg:flex space-x-8 flex flex-row items-center justify-around xl:space-x-16"
       }`}
     >
       {links.map(({ href, label }) => (
