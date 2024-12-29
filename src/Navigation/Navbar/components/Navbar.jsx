@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center p-6 md:p-10 w-full">
       {/* Logo Section */}
-      <Logo />
+      <div className="lg:hidden">
+        <Logo />
+      </div>
 
       {/* Burger Menu Icon */}
       <div className="lg:hidden">
