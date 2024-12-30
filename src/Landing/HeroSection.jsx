@@ -51,13 +51,13 @@ const HeroSection = () => {
       </div>
 
       {/* Right Diagonal Image */}
-      <div className="absolute top-0 right-0 h-[100%] h-screen w-[40%] md:w-[50%] py-12 md:py-0">
+      <div className="absolute top-0 right-0 h-[100%] lg:h-screen w-[43%] md:w-[50%] py-12 md:py-0">
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
             backgroundImage: `url(${dubaiImage})`,
             clipPath: isMobile
-              ? "polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%)" // Mobile clipPath
+              ? "polygon(60% 0%, 100% 0%, 100% 100%, 0% 100%)" // Mobile clipPath
               : "polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%)", // Desktop clipPath
           }}
         />
