@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import dubaiImage from "../dubai-skyline.jpg"; // Replace with the correct path to your local image
+import Socials from "./Socials";
 
 const HeroSection = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -44,14 +45,20 @@ const HeroSection = () => {
         {/* Email Input Section */}
         <div className="w-full space-y-5 md:space-y-8">
           <p className="text-green-600 font-medium">Want to learn more?</p>
-          <button className="px-12 md:px-8 py-3 2xl:px-12 2xl:py-4 bg-green-600 text-white rounded-full font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
-            Get Started
-          </button>
+          <div className="flex flex-col md:flex-row md:items-center md:space-x-6 space-y-10 md:space-y-0">
+            {/* Get Started Button */}
+            <button className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-600 text-white rounded-full font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
+              Get Started
+            </button>
+
+            {/* Socials */}
+            <Socials />
+          </div>
         </div>
       </div>
 
       {/* Right Diagonal Image */}
-      <div className="absolute top-0 right-0 h-[100%] lg:h-screen w-[43%] md:w-[50%] py-12 md:py-0">
+      <div className="absolute top-0 right-0 h-[100%] lg:h-[90%] w-[43%] md:w-[50%] py-12 md:py-0">
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
