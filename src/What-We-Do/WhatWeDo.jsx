@@ -23,7 +23,7 @@ const WhatWeDo = () => {
       {/* Cards Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Card 1 */}
-        <div className="bg-white shadow-md rounded-lg px-6  py-[40px] md:py-[60px] flex flex-col space-y-10 items-start text-left">
+        <div className="bg-white shadow-md rounded-lg px-6  py-[40px] md:py-[60px] flex flex-col space-y-10 items-start text-left hover:bg-green-700/10 ">
           <FaLock className="text-green-600 text-4xl mb-4" />
           <div>
             <h3 className="font-bold text-xl mb-2">Secure and stable growth</h3>
@@ -37,7 +37,7 @@ const WhatWeDo = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white shadow-md rounded-lg px-6  py-[40px] md:py-[60px] flex flex-col space-y-10 items-start text-left">
+        <div className="bg-white shadow-md rounded-lg px-6  py-[40px] md:py-[60px] flex flex-col space-y-10 items-start text-left hover:bg-green-700/10">
           <FaCogs className="text-green-600 text-4xl mb-4" />
           <div>
             <h3 className="font-bold text-xl mb-2">
@@ -52,7 +52,7 @@ const WhatWeDo = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white shadow-md rounded-lg px-6  py-[40px] md:py-[60px] flex flex-col space-y-10 items-start text-left">
+        <div className="bg-white shadow-md rounded-lg px-6  py-[40px] md:py-[60px] flex flex-col space-y-10 items-start text-left hover:bg-green-700/10">
           <FaBullseye className="text-green-600 text-4xl mb-4" />
           <div>
             <h3 className="font-bold text-xl mb-2">
