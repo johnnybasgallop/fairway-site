@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Socials = () => {
   return (
-    <div className="flex flex-row space-x-6">
+    <div className="flex flex-row space-x-6 px-2">
       {/* Instagram */}
       <a
         href="https://www.instagram.com"

@@ -24,16 +24,19 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-between px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 lg:py-[80px] xl:py-[120px] 2xl:py-[150px]">
+    <section className="relative flex items-center justify-between px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 lg:py-[80px] xl:py-[120px] 2xl:py-[170px]">
       {/* Left Content */}
       <div className="w-[65%] md:w-[50%] lg:w-[60%] xl:w-[50%] flex flex-col items-start justify-start space-y-6 text-left z-10">
         {/* Heading */}
         <h1 className="text-4xl md:text-6xl 2xl:text-[70px] font-extrabold leading-tight md:leading-snug xl:leading-normal">
           Building Wealth with{" "}
-          <span className="text-green-600 xl:leading-normal leading-snug">
+          <span className="text-transparent bg-clip-text bg-green-gradient xl:leading-normal leading-snug">
             Precision
           </span>{" "}
-          and <span className="text-green-600">Purpose</span>
+          and{" "}
+          <span className="text-transparent bg-clip-text bg-green-gradient">
+            Purpose
+          </span>
         </h1>
 
         {/* Subtext */}
@@ -45,11 +48,13 @@ const HeroSection = () => {
         </p>
 
         {/* Email Input Section */}
-        <div className="w-full space-y-5 md:space-y-8">
-          <p className="text-green-600 font-medium">Want to learn more?</p>
+        <div className="w-full space-y-5 md:space-y-6">
+          <p className="text-transparent bg-clip-text bg-green-gradient font-bold px-2">
+            Want to learn more?
+          </p>
           <div className="flex flex-col md:flex-row md:items-center md:space-x-6 space-y-10 md:space-y-0">
             {/* Get Started Button */}
-            <button className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-600 text-white rounded-full font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
+            <button className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-gradient text-white rounded-full font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
               Get Started
             </button>
 
