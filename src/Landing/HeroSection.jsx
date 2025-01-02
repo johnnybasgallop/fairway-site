@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import dubaiImage from "../dubai-skyline.jpg"; // Replace with the correct path to your local image
+import dubaiImage from "../dubai-skyline.jpg";
+import dubai1 from "../dubai1.jpeg";
+import dubai2 from "../dubai2.jpeg";
 import Socials from "./Socials";
 
 const HeroSection = () => {
@@ -62,7 +64,7 @@ const HeroSection = () => {
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url(${dubaiImage})`,
+            backgroundImage: `url(${dubai1})`,
             clipPath: isMobile
               ? "polygon(60% 0%, 100% 0%, 100% 100%, 0% 100%)" // Mobile clipPath
               : "polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%)", // Desktop clipPath
