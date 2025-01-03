@@ -4,6 +4,7 @@ import Navbar from "./Navbar/Navbar";
 import HeroSection from "./Landing/HeroSection";
 import WhatWeDo from "./What-We-Do/WhatWeDo";
 import ContactPage from "./Contact-Us/ContactPage";
+import MeetTheTeam from "./Out-Team/MeetTheTeam";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <WhatWeDo />
+      <MeetTheTeam />
       <ContactPage />
     </div>
   );

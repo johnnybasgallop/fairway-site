@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactPage = () => {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-12 bg-white">
+    <section className="px-6 md:px-12 lg:px-24 py-8 lg:py-[30px] xl:py-[60px] 2xl:pt-[85px] bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Section */}
         <div className="text-left">
