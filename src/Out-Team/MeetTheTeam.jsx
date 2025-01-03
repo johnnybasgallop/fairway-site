@@ -34,9 +34,9 @@ const teamMembers = [
 
 const MeetTheTeam = () => {
   return (
-    <section className="bg-white py-8 lg:py-[30px] xl:py-[60px] 2xl:pt-[85px]">
+    <section className="bg-white py-8 lg:py-[30px] xl:py-[60px] 2xl:pt-[85px] px-6 md:px-12 lg:px-24">
       {/* Heading */}
-      <div className="text-left mb-0 px-6 md:px-12 lg:px-24 py-12">
+      <div className="text-left mb-0  py-12">
         <h3 className="text-transparent bg-clip-text bg-green-gradient font-bold text-md py-2 uppercase">
           Our Team
         </h3>
@@ -51,15 +51,17 @@ const MeetTheTeam = () => {
       </div>
 
       {/* Team Grid */}
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-3 md:px-6 lg:px-14 pb-10">
+      <div className=" w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pb-10 px-0">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className={`px-10 rounded-lg flex flex-col items-center text-center`}
+            className={`${
+              index == 0 ? "px-0 mx-0" : "pr-4"
+            } rounded-lg flex flex-col items-start text-center`}
           >
             {/* Image */}
             <div
-              className={`${member.bgColor} w-[300px] h-[300px] rounded-md overflow-hidden mb-4 px-2 pb-0 pt-6`}
+              className={`${member.bgColor} w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] rounded-md overflow-hidden mb-4 px-2 pb-0 pt-6`}
             >
               <img
                 src={ollieImage}
