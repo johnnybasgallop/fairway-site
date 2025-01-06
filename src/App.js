@@ -5,6 +5,7 @@ import HeroSection from "./Landing/HeroSection";
 import WhatWeDo from "./What-We-Do/WhatWeDo";
 import ContactPage from "./Contact-Us/ContactPage";
 import MeetTheTeam from "./Out-Team/MeetTheTeam";
+import GetStartedWidget from "./Get-Started/GetStartedWidget";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <WhatWeDo />
+      <GetStartedWidget />
       <MeetTheTeam />
       <ContactPage />
     </div>
