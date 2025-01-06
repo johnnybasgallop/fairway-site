@@ -77,7 +77,9 @@ const MeetTheTeam = () => {
                 {member.title}
               </h4>
               {/* Description */}
-              <p className="text-sm text-gray-600">{member.description}</p>
+              <p className="text-sm text-gray-600 max-w-[300px]">
+                {member.description}
+              </p>
             </div>
           </div>
         ))}
