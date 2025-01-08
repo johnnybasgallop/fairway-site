@@ -2,7 +2,7 @@ import { Widget, PopupButton } from "@typeform/embed-react";
 
 const GetStartedWidget = () => {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-8 lg:py-[30px] xl:py-[60px] 2xl:pt-[85px] bg-white">
+    <section className="px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 bg-white text-left w-full py-4 lg:py-[60px] xl:py-[100px] 2xl:py-[120px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Section */}
         <div className="text-left">
@@ -12,7 +12,7 @@ const GetStartedWidget = () => {
           <h2 className="text-3xl md:text-6xl tracking-wide font-semibold py-4">
             Get Started
           </h2>
-          <p className="text-gray-600 mb-8 w-[90%]">
+          <p className="text-gray-600 mb-8 w-full md:w-[90%] py-2 md:pt-[30px] md:px-2">
             At Fairway Capital, we believe that success starts with a
             conversation. Whether you’re ready to invest or just exploring your
             options, our team is here to guide you every step of the way. Book a
@@ -23,10 +23,10 @@ const GetStartedWidget = () => {
             future—let’s get started today.
           </p>
 
-          <div className="space-y-[80px] pt-[40px]">
+          <div className="space-y-[40px] pt-[20px] md:space-y-[80px] md:pt-[40px]">
             <div className="w-full space-y-5 md:space-y-3">
               <p className="text-md text-transparent bg-clip-text bg-green-gradient font-bold hover:font-extrabold">
-                Want to learn more?
+                Ready to talk?
               </p>
               <button className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-gradient text-white rounded-xl font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
                 Get Started
@@ -36,7 +36,7 @@ const GetStartedWidget = () => {
               <p className="text-md text-transparent bg-clip-text bg-green-gradient font-bold hover:font-extrabold">
                 Let us learn more about you
               </p>
-              <p className="text-gray-600 w-[90%] py-2">
+              <p className="text-gray-600 w-full md:w-[90%] py-2">
                 Complete our quick form to help us understand your priorities.
                 We’ll be in touch to discuss how we can support your growth.
               </p>
@@ -48,7 +48,7 @@ const GetStartedWidget = () => {
           <Widget
             id="PtAggMKR"
             // style={{ width: "100%" }}
-            className="w-full h-[600px] rounded-2xl"
+            className="w-full h-[300px] md:h-[600px] rounded-2xl"
           />
         </div>
       </div>
