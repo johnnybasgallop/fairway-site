@@ -2,7 +2,7 @@ import { Widget, PopupButton } from "@typeform/embed-react";
 
 const GetStartedWidget = () => {
   return (
-    <section className="px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 bg-white text-left w-full py-4 lg:py-[60px] xl:py-[100px] 2xl:py-[120px]">
+    <section className="px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 bg-white text-left w-full py-12 lg:py-[60px] xl:py-[100px] 2xl:py-[120px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Section */}
         <div className="text-left">
@@ -25,12 +25,17 @@ const GetStartedWidget = () => {
 
           <div className="space-y-[40px] pt-[20px] md:space-y-[80px] md:pt-[40px]">
             <div className="w-full space-y-5 md:space-y-3">
-              <p className="text-md text-transparent bg-clip-text bg-green-gradient font-bold hover:font-extrabold">
+              <p className="text-md text-transparent bg-clip-text bg-green-gradient font-bold hover:font-extrabold mb-3 lg:mb-4">
                 Ready to talk?
               </p>
-              <button className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-gradient text-white rounded-xl font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
-                Get Started
-              </button>
+              <a
+                target="_blank"
+                href="https://calendly.com/fairwaycapitalpartners-info/onboarding?month=2025-01"
+              >
+                <button className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-gradient text-white rounded-xl font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
+                  Book a call
+                </button>
+              </a>
             </div>
             <div>
               <p className="text-md text-transparent bg-clip-text bg-green-gradient font-bold hover:font-extrabold">

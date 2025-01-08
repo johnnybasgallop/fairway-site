@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
 import Navbar from "./Navbar/Navbar";
 import HeroSection from "./Landing/HeroSection";
 import WhatWeDo from "./What-We-Do/WhatWeDo";
@@ -14,7 +13,7 @@ function App() {
       <HeroSection />
       <WhatWeDo />
       <GetStartedWidget />
-      <MeetTheTeam />
+      {/* <MeetTheTeam /> */}
       <ContactPage />
     </div>
   );

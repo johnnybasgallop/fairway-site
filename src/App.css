@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust this value to match your navbar height */
+}
 .bg-clip-text {
   background-clip: text;
   -webkit-background-clip: text;
@@ -9,6 +13,27 @@
 
 .App {
   text-align: center;
+}
+
+@media screen and (min-width: 1040px) {
+  .App {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh; /* Ensure full height for snap */
+  }
+
+  .App > div {
+    scroll-snap-align: start;
+    height: 100vh; /* Each section should take up full viewport height */
+  }
+}
+
+/* Disable snap scroll on mobile */
+@media screen and (max-width: 1039px) {
+  .App {
+    scroll-snap-type: none;
+    overflow-y: auto;
+  }
 }
 
 .App-logo {

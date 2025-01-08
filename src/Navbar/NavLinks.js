@@ -7,7 +7,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
     { href: "#what-we-offer", label: "What we offer" },
     { href: "#get-started", label: "Get started" },
     { href: "#why-us", label: "Why us?" },
-    { href: "#our-team", label: "Our team" },
+    { href: "#meet-the-team", label: "Our team" },
   ];
 
   return (
@@ -45,7 +45,9 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
       <a
         href="#contact-us"
         className={`bg-black text-white px-6 py-2 ${
-          isMobile ? "w-[90%] rounded-xl absolute bottom-10" : "rounded-full"
+          isMobile
+            ? "w-[90%] rounded-xl absolute bottom-10 text-center py-4"
+            : "rounded-full"
         } font-medium hover:bg-gray-600`}
         onClick={isMobile ? closeMenu : undefined}
       >
