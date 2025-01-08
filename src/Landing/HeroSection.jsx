@@ -49,7 +49,7 @@ const HeroSection = () => {
 
         {/* Email Input Section */}
         <div className="w-full space-y-5 md:space-y-6">
-          <p className="text-transparent bg-clip-text bg-green-gradient font-bold px-2">
+          <p className="text-transparent bg-clip-text bg-green-gradient font-bold px-2 hover:font-extrabold">
             Want to learn more?
           </p>
           <div className="flex flex-col md:flex-row md:items-center md:space-x-6 space-y-10 md:space-y-0">

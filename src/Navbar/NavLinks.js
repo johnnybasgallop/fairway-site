@@ -24,7 +24,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
           <a
             key={href}
             href={href}
-            className="text-gray-700 font-semibold hover:text-gray-900"
+            className="text-gray-700 font-semibold hover:text-gray-900 hover:underline"
             onClick={isMobile ? closeMenu : undefined}
           >
             {label}
