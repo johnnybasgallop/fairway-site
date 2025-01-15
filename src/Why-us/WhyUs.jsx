@@ -9,7 +9,7 @@ const LeftColumn = () => {
       icon: "👤",
       bgColor: "bg-teal-900",
       textColor: "text-white",
-      height: 'h-2/3'
+      height: 'h-[65%] lg:h-2/3'
     },
     {
       title: "Expert-Led, Client-Focused",
@@ -18,22 +18,22 @@ const LeftColumn = () => {
       icon: "💡",
       bgColor: "bg-gray-100",
       textColor: "text-gray-900",
-      height: 'h-1/3'
+      height: 'h-[35%] lg:h-1/3'
     },
   ];
 
   return (
-    <div className="flex flex-col h-[700px] gap-2">
+    <div className="flex flex-col h-[700px] lg:gap-2 gap-5">
       {features.map((feature, index) => (
         <div
           key={index}
-          className={`p-6 rounded-lg shadow-lg ${feature.bgColor} ${feature.textColor} ${feature.height}`}
+          className={`p-6 rounded-lg shadow-sm ${feature.bgColor} ${feature.textColor} ${feature.height}`}
         >
           <div className="flex items-center mb-4">
             <span className="text-2xl mr-4">{feature.icon}</span>
             <h4 className="text-xl font-semibold">{feature.title}</h4>
           </div>
-          <p className="text-sm">{feature.description}</p>
+          <p className="text-md lg:text-lg">{feature.description}</p>
         </div>
       ))}
     </div>
@@ -48,8 +48,8 @@ const RightColumn = () => {
         "We make wealth creation accessible for everyone, regardless of background or experience. By breaking trading barriers, we equip clients with the tools to take charge of their financial future.",
       icon: "🛠️",
       bgColor: "bg-yellow-100",
-          textColor: "text-gray-900",
-      height: 'h-1/3'
+        textColor: "text-gray-900",
+    height: 'h-[35%] lg:h-1/3'
     },
     {
       title: "Innovation at the Core",
@@ -58,22 +58,22 @@ const RightColumn = () => {
       icon: "⚙️",
       bgColor: "bg-blue-100",
         textColor: "text-gray-900",
-      height: 'h-2/3'
+      height: 'h-[65%] lg:h-2/3'
     },
   ];
 
   return (
-    <div className="flex flex-col h-[700px] gap-2">
+    <div className="flex flex-col h-[700px] lg:gap-2 gap-5">
       {features.map((feature, index) => (
         <div
           key={index}
-          className={`p-6 rounded-lg shadow-lg ${feature.bgColor} ${feature.textColor} ${feature.height}`}
+          className={`p-6 rounded-lg shadow-sm ${feature.bgColor} ${feature.textColor} ${feature.height}`}
         >
           <div className="flex items-center mb-4">
             <span className="text-2xl mr-4">{feature.icon}</span>
             <h4 className="text-xl font-semibold">{feature.title}</h4>
           </div>
-          <p className="text-lg">{feature.description}</p>
+          <p className="text-md lg:text-lg">{feature.description}</p>
         </div>
       ))}
     </div>
@@ -91,7 +91,7 @@ const WhyUs = () => {
         <h3 className="text-4xl font-bold text-gray-900 mb-12">
           Discover the Difference
         </h3>
-        <div className="grid grid-cols-2 gap-2">
+        <div className="lg:grid lg:grid-cols-2 grid-cols-1 gap-2 space-y-5 lg:space-y-0">
           <LeftColumn />
           <RightColumn />
         </div>
