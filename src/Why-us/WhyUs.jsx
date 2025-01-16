@@ -14,7 +14,7 @@ const LeftColumn = () => {
       icon: MdPersonOutline, // Use the imported icon component
       bgColor: "bg-[#1C3F3A]",
       textColor: "text-white",
-      height: "h-[65%] lg:h-[60%]",
+      height: " h-[65%] md:h-[58%] lg:h-[60%]",
     },
     {
       title: "Expert-Led, Client-Focused",
@@ -23,12 +23,12 @@ const LeftColumn = () => {
       icon: LuBrain, // Use the imported icon component
       bgColor: "bg-[#E9E9E9]",
       textColor: "text-[#494848]",
-      height: "h-[35%] lg:h-[40%]",
+      height: "h-[35%] md:h-[42%] lg:h-[40%]",
     },
   ];
 
   return (
-    <div className="flex flex-col h-[650px] lg:gap-2 gap-5">
+<div className="flex flex-col h-[650px] md:h-[450px] lg:h-[800px] xl:h-[750px] lg:gap-2 gap-5">
       {features.map((feature, index) => (
         <div
           key={index}
@@ -39,11 +39,11 @@ const LeftColumn = () => {
             <div className="bg-white rounded-lg p-3 mr-4 shadow-sm text-[#494848]">
               <feature.icon className="text-xl lg:text-3xl" /> {/* Render the icon */}
             </div>
-            <h4 className="text-xl lg:text-3xl font-medium">
+            <h4 className="text-xl lg:text-2xl 2xl:text-3xl font-medium">
               {feature.title}
             </h4>
           </div>
-          <p className="text-md lg:text-[23px] lg:px-2 font-medium pt-5">
+          <p className="text-md lg:text-[20px] 2xl:text-[23px] lg:px-2 font-medium pt-5">
             {feature.description}
           </p>
         </div>
@@ -75,7 +75,7 @@ const RightColumn = () => {
   ];
 
   return (
-    <div className="flex flex-col h-[650px] lg:gap-2 gap-5">
+<div className="flex flex-col h-[650px] md:h-[450px] lg:h-[800px] xl:h-[750px] lg:gap-2 gap-5">
       {features.map((feature, index) => (
         <div
           key={index}
@@ -86,11 +86,11 @@ const RightColumn = () => {
             <div className="bg-white rounded-lg p-3 mr-4 shadow-sm text-[#494848]">
               <feature.icon className="text-xl lg:text-3xl" /> {/* Render the icon */}
             </div>
-            <h4 className="text-xl lg:text-3xl font-medium">
+            <h4 className="text-xl lg:text-2xl 2xl:text-3xl font-medium">
               {feature.title}
             </h4>
           </div>
-          <p className="text-md lg:text-[23px] lg:px-2 font-medium pt-5">
+          <p className="text-md lg:text-[20px] 2xl:text-[23px] lg:px-2 font-medium pt-5">
             {feature.description}
           </p>
         </div>
