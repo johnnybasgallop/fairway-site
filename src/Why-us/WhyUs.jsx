@@ -109,7 +109,7 @@ const WhyUs = () => {
         <h2 className="text-3xl md:text-6xl tracking-wide font-semibold py-4">
           Discover the Difference
         </h2>
-        <div className="lg:grid lg:grid-cols-2 grid-cols-1 gap-2 space-y-5 lg:space-y-0 md:pt-[40px]">
+        <div className="lg:grid lg:grid-cols-2 grid-cols-1 gap-2 space-y-5 lg:space-y-0 pt-5 md:pt-[40px]">
           <LeftColumn />
           <RightColumn />
         </div>

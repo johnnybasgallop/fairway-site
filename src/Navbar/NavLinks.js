@@ -3,11 +3,11 @@ import Logo from "./Logo";
 
 const NavLinks = ({ isMobile = false, closeMenu }) => {
   const links = [
-    { href: "#what-we-do", label: "What we do" },
-    { href: "#what-we-offer", label: "What we offer" },
-    { href: "#get-started", label: "Get started" },
-    { href: "#why-us", label: "Why us?" },
-    { href: "#meet-the-team", label: "Our team" },
+    { href: "/", label: "What we do" },
+    { href: "/", label: "What we offer" },
+    { href: "/", label: "Get started" },
+    { href: "/", label: "Why us?" },
+    { href: "/meetTheTeam", label: "Our team" },
   ];
 
   return (
