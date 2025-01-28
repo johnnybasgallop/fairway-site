@@ -3,31 +3,31 @@ import ollieImage from "../ollie-ss.png";
 
 const teamMembers = [
   {
-    name: "Oliver Bean",
-    title: "Example title",
+    name: "Allistair Hess",
+    title: "General Manager",
     description: "Example relevant experience or short description about role",
-    image: "../ollie-ss.png", // Replace with actual image path
+    image: "../Ali-profile.png", // Replace with actual image path
     bgColor: "bg-[#EAF6E7]", // Light Green
   },
   {
     name: "Oliver Bean",
-    title: "Example title",
+    title: "Chief Executive Officer",
     description: "Example relevant experience or short description about role",
-    image: "../ollie-ss.png", // Replace with actual image path
+    image: "../ollie-profile.png", // Replace with actual image path
     bgColor: "bg-[#D7E8FF]", // Light Blue
   },
   {
-    name: "Oliver Bean",
-    title: "Example title",
+    name: "Dan Byrne",
+    title: "Chief Finance Officer",
     description: "Example relevant experience or short description about role",
-    image: "../ollie-ss.png", // Replace with actual image path
+    image: "../dan-profile.png", // Replace with actual image path
     bgColor: "bg-[#FFF9D7]", // Pale Yellow
   },
   {
-    name: "Oliver Bean",
-    title: "Example title",
+    name: "Chris Hynes",
+    title: "Head Of Operations",
     description: "Example relevant experience or short description about role",
-    image: "../ollie-ss.png", // Replace with actual image path
+    image: "../chris-profile.png", // Replace with actual image path
     bgColor: "bg-[#EAE3FF]", // Lavender
   },
 ];
