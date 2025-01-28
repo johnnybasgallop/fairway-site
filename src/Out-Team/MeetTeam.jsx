@@ -108,7 +108,7 @@ function MeetTeam() {
                 lines={4}
                 more="Read more"
                 less="Read more"
-                anchorClass="text-sm text-gray-600 max-w-[100%] md:max-w-[450px]"
+                anchorClass="text-sm text-[#2A5C6D] font-bold max-w-[100%] md:max-w-[450px]"
                 onClick={() => openModal(member)}
                 expanded={false}
                 expandByClick={false}
