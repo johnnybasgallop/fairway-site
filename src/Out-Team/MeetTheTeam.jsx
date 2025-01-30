@@ -1,33 +1,40 @@
 import React from "react";
 import ollieImage from "../ollie-ss.png";
+import ollieprofile from "../ollie-profile.png"
+import alfieprofile from "../alfie-profile.png"
+import aliprofile from "../Ali-profile.png"
+import chrisprofile from "../chris-profile.png"
+import danprofile from "../dan-profile.png"
+import andrewprofile from "../andrew-profile.png"
+
 
 const teamMembers = [
   {
     name: "Allistair Hess",
     title: "General Manager",
     description: "Example relevant experience or short description about role",
-    image: "../Ali-profile.png", // Replace with actual image path
+    image: "../ollie-profile.", // Replace with actual image path
     bgColor: "bg-[#EAF6E7]", // Light Green
   },
   {
     name: "Oliver Bean",
-    title: "Chief Executive Officer",
+    title: "Example title",
     description: "Example relevant experience or short description about role",
-    image: "../ollie-profile.png", // Replace with actual image path
+    image: "../ollie-ss.png", // Replace with actual image path
     bgColor: "bg-[#D7E8FF]", // Light Blue
   },
   {
-    name: "Dan Byrne",
-    title: "Chief Finance Officer",
+    name: "Oliver Bean",
+    title: "Example title",
     description: "Example relevant experience or short description about role",
-    image: "../dan-profile.png", // Replace with actual image path
+    image: "../ollie-ss.png", // Replace with actual image path
     bgColor: "bg-[#FFF9D7]", // Pale Yellow
   },
   {
-    name: "Chris Hynes",
-    title: "Head Of Operations",
+    name: "Oliver Bean",
+    title: "Example title",
     description: "Example relevant experience or short description about role",
-    image: "../chris-profile.png", // Replace with actual image path
+    image: "../ollie-ss.png", // Replace with actual image path
     bgColor: "bg-[#EAE3FF]", // Lavender
   },
 ];
