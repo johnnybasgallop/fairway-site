@@ -4,7 +4,7 @@ import Logo from "./Logo";
 const NavLinks = ({ isMobile = false, closeMenu }) => {
   const links = [
     { href: "/", label: "What we do" },
-    { href: "/", label: "What we offer" },
+    { href: "/", label: "How it works" },
     { href: "/", label: "Get started" },
     { href: "/", label: "Why us?" },
     { href: "/meetTheTeam", label: "Our team" },

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLock, FaCogs, FaBullseye } from "react-icons/fa";
+import { FaBullseye, FaCogs, FaLock } from "react-icons/fa";
 
 const WhatWeDo = () => {
   return (

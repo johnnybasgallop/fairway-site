@@ -2,6 +2,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"; // Import Router components
 import ContactPage from "./Contact-Us/ContactPage";
 import GetStartedWidget from "./Get-Started/GetStartedWidget";
+import HowItWorks from "./How-It-Works/HowItWorks";
 import HeroSection from "./Landing/HeroSection";
 import Navbar from "./Navbar/Navbar";
 import MeetTheTeam from "./Out-Team/MeetTeam"; // Import your new MeetTheTeam component
@@ -14,15 +15,19 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={
-            <>
-              <HeroSection />
-              <WhatWeDo />
-              <GetStartedWidget />
-              <WhyUs />
-              <ContactPage />
-            </>
-          } />
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <WhatWeDo />
+                <HowItWorks />
+                <GetStartedWidget />
+                <WhyUs />
+                <ContactPage />
+              </>
+            }
+          />
           <Route path="/meetTheTeam" element={<MeetTheTeam />} />
         </Routes>
       </div>
