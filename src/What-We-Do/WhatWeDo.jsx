@@ -3,7 +3,10 @@ import { FaBullseye, FaCogs, FaLock } from "react-icons/fa";
 
 const WhatWeDo = () => {
   return (
-    <section className="px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 bg-white text-left w-full py-12 lg:py-[60px] xl:py-[100px] 2xl:py-[120px]">
+    <section
+      id="whatwedo"
+      className="px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 bg-white text-left w-full py-12 lg:py-[60px] xl:py-[100px] 2xl:py-[120px]"
+    >
       {/* Section Heading */}
       <div className="text-left mb-12">
         <h3 className="text-transparent bg-clip-text bg-green-gradient font-bold text-md py-2 uppercase">

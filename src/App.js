@@ -13,7 +13,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar
+        // heroRef={heroRef}
+        // whatWeDoRef={whatWeDoRef}
+        // howItWorksRef={howItWorksRef}
+        // getStartedWidgetRef={getStartedWidgetRef}
+        // whyUsRef={whyUsRef}
+        />
         <Routes>
           <Route
             path="/"

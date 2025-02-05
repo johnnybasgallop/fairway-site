@@ -3,11 +3,11 @@ import Logo from "./Logo";
 
 const NavLinks = ({ isMobile = false, closeMenu }) => {
   const links = [
-    { href: "/", label: "What we do" },
-    { href: "/", label: "How it works" },
-    { href: "/", label: "Get started" },
-    { href: "/", label: "Why us?" },
-    { href: "/meetTheTeam", label: "Our team" },
+    { label: "What we do", ref: "#whatwedo" },
+    { label: "How it works", ref: "#howitworks" },
+    { label: "Get started", ref: "#getstarted" },
+    { label: "Why us?", ref: "#whyus" },
+    { href: "/meetTheTeam", label: "Our team", ref: "#ourteam" },
   ];
 
   return (
@@ -20,12 +20,21 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
     >
       <div className=" hidden lg:flex flex-row items-center lg:space-x-6 xl:space-x-12 2xl:space-x-16">
         <Logo />
-        {links.map(({ href, label }) => (
+        {links.map(({ href, label, ref }) => (
           <a
             key={href}
-            href={href}
+            href={window.location.pathname == "/meetTheTeam" ? "/" : href}
             className="text-gray-700 font-semibold hover:text-gray-900 hover:underline"
-            onClick={isMobile ? closeMenu : undefined}
+            onClick={
+              href != "/meetTheTeam"
+                ? () => {
+                    const element = document.querySelector(ref);
+                    element?.scrollIntoView({
+                      behavior: "smooth",
+                    });
+                  }
+                : undefined
+            }
           >
             {label}
           </a>
@@ -49,7 +58,12 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
             ? "w-[90%] rounded-xl absolute bottom-10 text-center py-4"
             : "rounded-full"
         } font-medium hover:bg-gray-600`}
-        onClick={isMobile ? closeMenu : undefined}
+        onClick={() => {
+          const element = document.querySelector("#contact");
+          element?.scrollIntoView({
+            behavior: "smooth",
+          });
+        }}
       >
         Contact us
       </a>

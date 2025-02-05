@@ -41,7 +41,10 @@ const ContactPage = () => {
   };
 
   return (
-    <section className="px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 bg-white text-left w-full py-0 lg:py-[60px] xl:py-[100px] 2xl:py-[120px]">
+    <section
+      id="contact"
+      className="px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 bg-white text-left w-full py-0 lg:py-[60px] xl:py-[100px] 2xl:py-[120px]"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Section */}
         <div className="text-left">

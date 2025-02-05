@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Logo from "./Logo";
 import BurgerMenuIcon from "./BurgerMenuIcon";
-import NavLinks from "./NavLinks";
+import Logo from "./Logo";
 import MobileMenu from "./MobileMenu";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
