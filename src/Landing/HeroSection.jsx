@@ -22,7 +22,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-between px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 lg:py-[80px] xl:py-[120px] 2xl:py-[170px]">
+    <section className="relative flex items-center justify-between px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] pb-12 pt-4 lg:py-[80px] xl:py-[120px] 2xl:py-[170px]">
       {/* Left Content */}
       <div className="w-[65%] md:w-[50%] lg:w-[60%] xl:w-[50%] flex flex-col items-start justify-start space-y-6 text-left z-10">
         {/* Heading */}
@@ -63,7 +63,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right Diagonal Image */}
-      <div className="absolute top-0 right-0 h-[100%] lg:h-[90%] w-[43%] md:w-[50%] py-12 md:py-0">
+      <div className="absolute top-0 right-0 h-[100%] lg:h-[90%] w-[43%] md:w-[50%] pb-12 pt-4 md:py-0">
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
