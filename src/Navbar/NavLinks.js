@@ -41,12 +41,22 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
         ))}
       </div>
 
-      {links.map(({ href, label }) => (
+      {links.map(({ href, label, ref }) => (
         <a
           key={href}
-          href={href}
+          href={window.location.pathname === "/meetTheTeam" ? "/" : href}
           className="lg:hidden text-gray-800 font-semibold hover:text-gray-900"
-          onClick={isMobile ? closeMenu : undefined}
+          onClick={
+            isMobile
+              ? () => {
+                  closeMenu();
+                  const element = document.querySelector(ref);
+                  element?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }
+              : undefined
+          }
         >
           {label}
         </a>
@@ -58,6 +68,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
             : "rounded-full"
         } font-medium hover:bg-gray-600`}
         onClick={() => {
+          closeMenu();
           const element = document.querySelector("#contact");
           element?.scrollIntoView({
             behavior: "smooth",
