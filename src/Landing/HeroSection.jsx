@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
-import dubaiImage from "../dubai-skyline.jpg";
+import React, { useEffect, useState } from "react";
 import dubai1 from "../dubai1.jpeg";
-import dubai2 from "../dubai2.jpeg";
 import Socials from "./Socials";
 
 const HeroSection = () => {

@@ -23,10 +23,10 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
         {links.map(({ href, label, ref }) => (
           <a
             key={href}
-            href={window.location.pathname == "/meetTheTeam" ? "/" : href}
+            href={window.location.pathname === "/meetTheTeam" ? "/" : href}
             className="text-gray-700 font-semibold hover:text-gray-900 hover:underline"
             onClick={
-              href != "/meetTheTeam"
+              href !== "/meetTheTeam"
                 ? () => {
                     const element = document.querySelector(ref);
                     element?.scrollIntoView({
@@ -51,8 +51,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
           {label}
         </a>
       ))}
-      <a
-        href="#contact-us"
+      <button
         className={`bg-black text-white px-6 py-2 ${
           isMobile
             ? "w-[90%] rounded-xl absolute bottom-10 text-center py-4"
@@ -66,7 +65,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
         }}
       >
         Contact us
-      </a>
+      </button>
     </div>
   );
 };

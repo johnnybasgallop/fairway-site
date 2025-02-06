@@ -85,7 +85,7 @@ function MeetTeam() {
           <div
             key={index}
             className={`${
-              index == 0 ? "px-0 mx-0 my-5 lg:my-0" : "pr-4 my-5 lg:my-0"
+              index === 0 ? "px-0 mx-0 my-5 lg:my-0" : "pr-4 my-5 lg:my-0"
             } rounded-lg flex flex-col items-start text-center`}
           >
             {/* Image */}
