@@ -52,7 +52,15 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col md:flex-row md:items-center md:space-x-6 space-y-10 md:space-y-0">
             {/* Get Started Button */}
-            <button className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-gradient text-white rounded-full font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
+            <button
+              onClick={() => {
+                const element = document.querySelector("#getstarted");
+                element?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-gradient text-white rounded-full font-medium lg:text-md 2xl:text-lg hover:bg-green-700"
+            >
               Get Started
             </button>
 

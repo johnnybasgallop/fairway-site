@@ -36,7 +36,7 @@ const GetStartedWidget = () => {
                 rel="noreferrer"
                 href="https://calendly.com/fairwaycapitalpartners-info/onboarding?month=2025-01"
               >
-                <button className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-gradient text-white rounded-xl font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
+                <button className="w-[75%] py-3 md:w-[60%] lg:w-[40%] 2xl:py-4 bg-green-gradient text-white rounded-full font-medium lg:text-md 2xl:text-lg hover:bg-green-700">
                   Book a call
                 </button>
               </a>
