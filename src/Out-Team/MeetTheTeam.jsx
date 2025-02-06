@@ -1,12 +1,5 @@
 import React from "react";
 import ollieImage from "../ollie-ss.png";
-import ollieprofile from "../ollie-profile.png"
-import alfieprofile from "../alfie-profile.png"
-import aliprofile from "../Ali-profile.png"
-import chrisprofile from "../chris-profile.png"
-import danprofile from "../dan-profile.png"
-import andrewprofile from "../andrew-profile.png"
-
 
 const teamMembers = [
   {
