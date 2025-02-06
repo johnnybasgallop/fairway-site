@@ -1,3 +1,4 @@
+import { useState } from "react"; // Import useState
 import { FaChartBar, FaProjectDiagram, FaSearch } from "react-icons/fa";
 
 const expandedPoints = [
@@ -6,9 +7,10 @@ const expandedPoints = [
     description:
       "We meticulously track and analyze all trading activity, creating a dataset that drives continuous improvement. This allows us to refine our strategies, optimizing even minor percentage changes for substantially better returns.",
     icon: <FaSearch className="text-purple-600 text-xl" />,
-    bgClass: "bg-purple-200", // Added for styling consistency
+    bgClass: "bg-purple-200",
     textClass: "text-purple-600",
     subText: "View how we collect and use our data",
+    image: "/path/to/data-tracking-image.jpg", // Add image paths
   },
   {
     name: "What goes into a trade",
@@ -18,6 +20,7 @@ const expandedPoints = [
     bgClass: "bg-blue-200",
     textClass: "text-blue-600",
     subText: "Discover our process",
+    image: "/path/to/trade-process-image.jpg", // Add image paths
   },
   {
     name: "Technical Analysis",
@@ -27,10 +30,21 @@ const expandedPoints = [
     bgClass: "bg-green-200",
     textClass: "text-green-600",
     subText: "Learn about our one-of-a-kind system",
+    image: "/path/to/technical-analysis-image.jpg", // Add image paths
   },
 ];
 
 export default function HowItWorks() {
+  const [selectedMember, setSelectedMember] = useState(null); // State for the modal
+
+  const openModal = (point) => {
+    setSelectedMember(point);
+  };
+
+  const closeModal = () => {
+    setSelectedMember(null);
+  };
+
   return (
     <section
       id="howitworks"
@@ -76,7 +90,8 @@ export default function HowItWorks() {
                 key={index}
                 className={`flex items-start justify-between ${
                   index <= 0 ? "py-5" : "py-7"
-                } border-b border-gray-300 bg-gray-100 md:bg-gray-50 hover:bg-gray-200 px-4 rounded-md`}
+                } border-b border-gray-300 bg-gray-100 md:bg-gray-50 hover:bg-gray-200 px-4 rounded-md cursor-pointer`}
+                onClick={() => openModal(point)} // Open modal on click
               >
                 <div
                   className={`flex flex-col ${
@@ -110,6 +125,68 @@ export default function HowItWorks() {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedMember && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div
+            className="absolute inset-0 bg-gray-900 opacity-50"
+            onClick={closeModal}
+          ></div>
+          <div className="bg-white rounded-lg z-10 max-w-4xl w-full mx-4 md:px-[18px] overflow-hidden">
+            <div className="flex md:py-6 gap-6">
+              {/* Image Section */}
+
+              {/* Content Section */}
+              <div className="w-full max-h-[500px] overflow-y-auto">
+                <div className="md:hidden w-full flex justify-end px-3 py-4">
+                  <button
+                    className="h-[30px] w-[30px] rounded-2xl bg-[#2A5C6D] hover:bg-[#1a4656] text-white transition-colors"
+                    onClick={closeModal}
+                  >
+                    X
+                  </button>
+                </div>
+                <div className="w-full flex flex-row items-start space-x-6 md:space-x-6 px-6">
+                  <div
+                    className={`w-[50px] h-[50px] flex items-center justify-center ${selectedMember.bgClass} rounded-lg mt-2`}
+                  >
+                    {selectedMember.icon}
+                  </div>
+
+                  <div className="w-full">
+                    <h4 className="text-2xl font-semibold text-gray-800">
+                      {selectedMember.name}
+                    </h4>
+                    <h5 className="text-lg text-gray-500">
+                      {selectedMember.subText}
+                    </h5>
+                    <div className="px-2 md:flex hidden ">
+                      <button
+                        className="px-4 py-2 md:px-6 md:py-2 bg-[#2A5C6D] hover:bg-[#1a4656] text-white rounded-md transition-colors"
+                        onClick={closeModal}
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Description with Paragraphs */}
+                <div className="mt-4 pb-10 p-6">
+                  {selectedMember.description
+                    .split("\n\n")
+                    .map((paragraph, index) => (
+                      <p key={index} className="mb-4 text-gray-600">
+                        {paragraph}
+                      </p>
+                    ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
