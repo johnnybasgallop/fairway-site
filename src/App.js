@@ -30,7 +30,7 @@ function App() {
           />
           <Route path="/meetTheTeam" element={<MeetTheTeam />} />
           <Route path="/whatWeDo" element={<WhatWeDo />} />
-          <Route path="/howItWorks" element={<MeetTheTeam />} />
+          <Route path="/howItWorks" element={<HowItWorks />} />
           <Route path="/getStarted" element={<GetStartedWidget />} />
           <Route path="/contactUs" element={<ContactPage />} />
         </Routes>
