@@ -1,25 +1,19 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"; // Import Router components
-import ContactPage from "./Contact-Us/ContactPage";
-import GetStartedWidget from "./Get-Started/GetStartedWidget";
-import HowItWorks from "./How-It-Works/HowItWorks";
+import ContactPage from "./Landing/Contact-Us/ContactPage";
+import GetStartedWidget from "./Landing/Get-Started/GetStartedWidget";
 import HeroSection from "./Landing/HeroSection";
+import HowItWorks from "./Landing/How-It-Works/HowItWorks";
+import MeetTheTeam from "./Landing/Out-Team/MeetTeam"; // Import your new MeetTheTeam component
+import WhatWeDo from "./Landing/What-We-Do/WhatWeDo";
+import WhyUs from "./Landing/Why-us/WhyUs";
 import Navbar from "./Navbar/Navbar";
-import MeetTheTeam from "./Out-Team/MeetTeam"; // Import your new MeetTheTeam component
-import WhatWeDo from "./What-We-Do/WhatWeDo";
-import WhyUs from "./Why-us/WhyUs";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar
-        // heroRef={heroRef}
-        // whatWeDoRef={whatWeDoRef}
-        // howItWorksRef={howItWorksRef}
-        // getStartedWidgetRef={getStartedWidgetRef}
-        // whyUsRef={whyUsRef}
-        />
+        <Navbar />
         <Routes>
           <Route
             path="/"
@@ -35,6 +29,10 @@ function App() {
             }
           />
           <Route path="/meetTheTeam" element={<MeetTheTeam />} />
+          <Route path="/whatWeDo" element={<MeetTheTeam />} />
+          <Route path="/howItWorks" element={<MeetTheTeam />} />
+          <Route path="/getStarted" element={<MeetTheTeam />} />
+          <Route path="/contactUs" element={<MeetTheTeam />} />
         </Routes>
       </div>
     </Router>

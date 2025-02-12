@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import ShowMoreText from "react-show-more-text";
-import aliprofile from "../Ali-profile.png";
-import alfieprofile from "../alfie-profile.png";
-import andrewprofile from "../andrew-profile.png";
-import chrisprofile from "../chris-profile.png";
-import danprofile from "../dan-profile.png";
-import ollieprofile from "../ollie-profile.png";
+import aliprofile from "../../Ali-profile.png";
+import alfieprofile from "../../alfie-profile.png";
+import andrewprofile from "../../andrew-profile.png";
+import chrisprofile from "../../chris-profile.png";
+import danprofile from "../../dan-profile.png";
+import ollieprofile from "../../ollie-profile.png";
 
 function MeetTeam() {
   const [selectedMember, setSelectedMember] = useState(null);
