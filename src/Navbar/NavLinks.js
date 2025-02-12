@@ -6,7 +6,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
     { label: "What we do", ref: "#whatwedo" },
     { label: "How it works", ref: "#howitworks" },
     { label: "Get started", ref: "#getstarted" },
-    { label: "Why us?", ref: "#whyus" },
+    // { label: "Why us?", ref: "#whyus" },
     { href: "/meetTheTeam", label: "Our team", ref: "#ourteam" },
   ];
 
