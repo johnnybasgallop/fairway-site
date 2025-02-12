@@ -29,10 +29,10 @@ function App() {
             }
           />
           <Route path="/meetTheTeam" element={<MeetTheTeam />} />
-          <Route path="/whatWeDo" element={<MeetTheTeam />} />
+          <Route path="/whatWeDo" element={<WhatWeDo />} />
           <Route path="/howItWorks" element={<MeetTheTeam />} />
-          <Route path="/getStarted" element={<MeetTheTeam />} />
-          <Route path="/contactUs" element={<MeetTheTeam />} />
+          <Route path="/getStarted" element={<GetStartedWidget />} />
+          <Route path="/contactUs" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>
