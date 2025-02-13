@@ -63,7 +63,7 @@ const OurMission = () => {
           <img
             src={fairwayMission}
             className="w-full h-full rounded-md"
-            alt="fairway mission image"
+            alt="fairway mission"
           />
         </div>
       </div>
