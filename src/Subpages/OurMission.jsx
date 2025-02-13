@@ -50,7 +50,7 @@ const OurMission = () => {
           </div>
         </div>
 
-        <div className="p-2 h-[700px] w-[700px] ml-[70px]">
+        <div className=" hidden lg:flex p-2 lg:w-[45vw] lg:h-[95%] xl:2xl:h-[700px] xl:ml-[5vw] xl:w-[40vw]">
           <img src={fairwayMission} className="w-full h-full rounded-md" />
         </div>
       </div>
