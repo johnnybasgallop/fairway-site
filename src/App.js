@@ -8,6 +8,7 @@ import MeetTheTeam from "./Landing/Out-Team/MeetTeam"; // Import your new MeetTh
 import WhatWeDo from "./Landing/What-We-Do/WhatWeDo";
 import WhyUs from "./Landing/Why-us/WhyUs";
 import Navbar from "./Navbar/Navbar";
+import OurMission from "./Subpages/OurMission";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
             }
           />
           <Route path="/meetTheTeam" element={<MeetTheTeam />} />
-          <Route path="/whatWeDo" element={<WhatWeDo />} />
+          <Route path="/whatWeDo" element={<OurMission />} />
           <Route path="/howItWorks" element={<HowItWorks />} />
           <Route path="/getStarted" element={<GetStartedWidget />} />
           <Route path="/contactUs" element={<ContactPage />} />
