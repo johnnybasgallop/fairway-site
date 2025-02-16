@@ -30,7 +30,7 @@ const expandedPoints = [
   },
 ];
 
-export default function HowItWorks() {
+export default function HowItWorksMain() {
   return (
     <section
       id="howitworks"

@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import GetStartedButton from "../../components/GetStartedButton";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -61,9 +62,7 @@ const ContactPage = () => {
           <p className="text-gray-600 font-bold underline mb-4">
             email@example.com
           </p>
-          <p className="text-gray-600 font-bold underline mb-8">
-            +66 45789 99879
-          </p>
+
           <div className="space-y-6">
             <div>
               <h4 className="font-bold text-lg mb-2">Customer Support</h4>
@@ -83,6 +82,7 @@ const ContactPage = () => {
                 to see!
               </p>
             </div>
+            <GetStartedButton />
           </div>
         </div>
 

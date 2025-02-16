@@ -1,5 +1,6 @@
 import React from "react";
 import WhatWeDo from "../Landing/What-We-Do/WhatWeDo";
+import GetStartedButton from "../components/GetStartedButton";
 import fairwayMission from "../fairwaymission.png";
 
 const OurMission = () => {
@@ -44,15 +45,7 @@ const OurMission = () => {
             wealth creation breaks traditional barriers, offering opportunities
             that inspire growth, trust, and long-term partnerships.
           </p>
-          <p className="text-gray-600 w-full py-2 md:pt-[30px] md:px-2">
-            Want to{" "}
-            <a
-              className="font-bold underline text-transparent bg-clip-text bg-green-gradient "
-              href="/getStarted"
-            >
-              Get started?
-            </a>
-          </p>
+          <GetStartedButton />
 
           <div className="space-y-[40px] pt-[20px] md:space-y-[80px] md:pt-[40px]">
             <div className="w-full space-y-5 md:space-y-3"></div>

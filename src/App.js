@@ -3,11 +3,12 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom"; // Im
 import ContactPage from "./Landing/Contact-Us/ContactPage";
 import GetStartedWidget from "./Landing/Get-Started/GetStartedWidget";
 import HeroSection from "./Landing/HeroSection";
-import HowItWorks from "./Landing/How-It-Works/HowItWorks";
+import HowItWorksMain from "./Landing/How-It-Works/HowItWorks";
 import MeetTheTeam from "./Landing/Out-Team/MeetTeam"; // Import your new MeetTheTeam component
 import WhatWeDo from "./Landing/What-We-Do/WhatWeDo";
 import WhyUs from "./Landing/Why-us/WhyUs";
 import Navbar from "./Navbar/Navbar";
+import HowItWorks from "./Subpages/HowItWorks";
 import OurMission from "./Subpages/OurMission";
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
               <>
                 <HeroSection />
                 <WhatWeDo />
-                <HowItWorks />
+                <HowItWorksMain />
                 <GetStartedWidget />
                 <WhyUs />
                 <ContactPage />
