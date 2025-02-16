@@ -78,7 +78,8 @@ export default function HowItWorksMain() {
                   index <= 0 ? "py-5" : "py-7"
                 } border-b border-gray-300 bg-gray-100 md:bg-gray-50 hover:bg-gray-200 px-4 rounded-md`}
               >
-                <div
+                <a
+                  href="/howItWorks"
                   className={`flex flex-col ${
                     index === 0
                       ? "justify-center mb-4"
@@ -99,7 +100,7 @@ export default function HowItWorksMain() {
                   >
                     {point.subText}
                   </p>
-                </div>
+                </a>
                 <div
                   className={`w-10 h-10 flex items-center justify-center ${point.bgClass} rounded-lg mt-2`}
                 >

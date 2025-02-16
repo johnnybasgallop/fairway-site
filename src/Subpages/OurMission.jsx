@@ -6,7 +6,7 @@ import fairwayMission from "../fairwaymission.png";
 const OurMission = () => {
   return (
     <section id="whatwedo">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 bg-white text-left w-full pt-12 lg:pt-[60px] xl:pt-[100px] 2xl:pt-[120px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-[20px] md:px-[30px] lg:px-[40px] xl:px-[80px] py-12 bg-white text-left w-full py-12 lg:py-[60px] xl:py-[70px] 2xl:py-[80px]">
         {/* Left Section */}
         <div className="text-left">
           <h3 className="text-transparent bg-clip-text bg-green-gradient font-bold text-md pt-2 uppercase">
