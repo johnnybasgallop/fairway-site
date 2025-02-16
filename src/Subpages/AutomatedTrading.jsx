@@ -1,5 +1,6 @@
 import React from "react";
 import Automatedimg from "../AutomatedTrading.jpg";
+import GetStartedButton from "../components/GetStartedButton";
 
 const AutomatedTrading = () => {
   return (
@@ -94,8 +95,8 @@ const AutomatedTrading = () => {
             profitability.
           </p>
 
-          <div className="space-y-[40px] pt-[20px] md:space-y-[80px] md:pt-[40px]">
-            <div className="w-full space-y-5 md:space-y-3"></div>
+          <div className="pt-3 md:pt-4">
+            <GetStartedButton />
           </div>
         </div>
 
