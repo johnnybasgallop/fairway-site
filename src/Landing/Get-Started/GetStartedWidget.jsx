@@ -49,6 +49,22 @@ const GetStartedWidget = () => {
                 Complete our quick form to help us understand your priorities.
                 We’ll be in touch to discuss how we can support your growth.
               </p>
+              <p className="text-gray-400 text-sm font-light w-full md:w-[90%] py-2">
+                by submitting this form you agree to our{" "}
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vRtEK7mYpOiC5zT2zH-dVIZjIg8-Up1p2ettAvCWxNrWXJTt2y7onTtvcVFAReXJ1hprPFYSIhTKBDW/pub"
+                  className="text-blue-600 font-medium underline"
+                >
+                  Terms of Service
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vTBDLfpbby1JnKmaQb3v0qb7mn07V-6sXCgeWlRSpIhq-WlulXpG96hWCrbt92h_w_wYB5empdYpyNY/pub"
+                  className="text-blue-600 font-medium underline"
+                >
+                  Privacy Policy
+                </a>
+              </p>
             </div>
           </div>
         </div>

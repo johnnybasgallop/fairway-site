@@ -156,11 +156,17 @@ const ContactPage = () => {
             {/* Terms */}
             <p className="text-sm text-gray-600 text-center">
               By contacting us, you agree to our{" "}
-              <a href="/" className="text-blue-600 font-medium underline">
+              <a
+                href="https://docs.google.com/document/d/e/2PACX-1vRtEK7mYpOiC5zT2zH-dVIZjIg8-Up1p2ettAvCWxNrWXJTt2y7onTtvcVFAReXJ1hprPFYSIhTKBDW/pub"
+                className="text-blue-600 font-medium underline"
+              >
                 Terms of service
               </a>{" "}
               and{" "}
-              <a href="/" className="text-blue-600 font-medium underline">
+              <a
+                href="https://docs.google.com/document/d/e/2PACX-1vTBDLfpbby1JnKmaQb3v0qb7mn07V-6sXCgeWlRSpIhq-WlulXpG96hWCrbt92h_w_wYB5empdYpyNY/pub"
+                className="text-blue-600 font-medium underline"
+              >
                 Privacy Policy
               </a>
               .
