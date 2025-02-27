@@ -60,7 +60,7 @@ const ContactPage = () => {
             from you!
           </p>
           <p className="text-gray-600 font-bold underline mb-4">
-            email@example.com
+            info@fairwaycapitalpartners.com
           </p>
 
           <div className="space-y-6">
