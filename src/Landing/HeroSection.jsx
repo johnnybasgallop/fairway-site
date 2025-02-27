@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import dubai1 from "../dubai1.jpeg";
+import dubai1 from "../Hero.webp";
 import Socials from "./Socials";
 
 const HeroSection = () => {
