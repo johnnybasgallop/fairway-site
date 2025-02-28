@@ -8,6 +8,7 @@ const NavLinks = ({ isMobile = false, closeMenu }) => {
     { label: "Get started", href: "/getStarted" },
     // { label: "Why us?", ref: "#whyus" },
     { label: "Our team", href: "/meetTheTeam" },
+    { label: "FAQ", href: "/faq" },
   ];
 
   return (

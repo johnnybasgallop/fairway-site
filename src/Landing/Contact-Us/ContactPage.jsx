@@ -76,7 +76,7 @@ const ContactPage = () => {
               <p className="text-gray-600">
                 There’s a chance your question or query has already been
                 answered. Check out our{" "}
-                <a href="/" className="text-blue-600 font-medium underline">
+                <a href="/faq" className="text-blue-600 font-medium underline">
                   FAQ
                 </a>{" "}
                 to see!
