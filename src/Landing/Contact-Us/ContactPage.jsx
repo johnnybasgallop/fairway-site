@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useState } from "react";
 import GetStartedButton from "../../components/GetStartedButton";
 
@@ -21,24 +20,32 @@ const ContactPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    try {
-      const response = await axios.post(
-        "http://localhost:5000/send-email",
-        formData
-      );
-      alert(response.data.message);
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-    } catch (error) {
-      console.error("Error sending email:", error);
-      alert("Failed to send your message. Please try again.");
-    }
+    fetch("https://api.brevo.com/v3/smtp/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "api-key": process.env.REACT_APP_EMAIL_KEY,
+      },
+      body: JSON.stringify({
+        sender: { email: "info@fairwaycapitalpartners.com" },
+        to: [{ email: "fairwaycontactquestions@gmail.com" }],
+        subject: `new question from ${formData.firstName} ${formData.lastName} @ ${formData.phone}`,
+        htmlContent: `<p>Name: ${formData.firstName} ${formData.lastName}</p><p>Email: ${formData.email}</p><p>phone number: ${formData.phone}</p><p>query: ${formData.message}</p>`,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log("Email sent!", data))
+      .then(() =>
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        })
+      )
+      .catch((error) => console.error("Error sending email:", error));
   };
 
   return (
